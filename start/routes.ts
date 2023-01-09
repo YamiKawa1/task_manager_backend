@@ -19,7 +19,28 @@
 */
 
 import Route from '@ioc:Adonis/Core/Route'
+import TasksController from 'App/Controllers/Http/TasksController'
 
 Route.get('/', async () => {
+  return { hello: 'world' }
+})
+
+Route.get('/tasks', async () => {
+  return { hello: 'get tasks' }
+})
+
+Route.post('/tasks', async () => {
+  return { hello: 'save tasks' }
+})
+
+Route.get('/tasks/:id', async () => {
+  return { hello: 'get tasks' }
+})
+
+Route.delete('/tasks/:id', async () => {
+  return { hello: 'world' }
+})
+
+Route.patch('/tasks/:id', async () => {
   return { hello: 'world' }
 })
