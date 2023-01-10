@@ -6,7 +6,7 @@ export default class Task extends BaseModel {
   public id: number
 
   @column()
-  public tittle: string
+  public title: string
 
   @column()
   public information: string
