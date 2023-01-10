@@ -18,8 +18,6 @@ export default class TasksController {
     .from('tasks')
     .select('*')
     .where('id', id)
-
-		console.log(task);
 		
 		if (task.length < 1) return ctx.response.status(404).send({ data: null, message: `la task ${id} no existe` })
 		
@@ -87,3 +85,7 @@ export default class TasksController {
 		return ctx.response.status(200).send({ data: updatedTask, message: `Actualizando Task ${updatedTask[0].id}` })
   }
 }
+function select(arg0: string) {
+	throw new Error('Function not implemented.')
+}
+
