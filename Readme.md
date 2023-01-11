@@ -17,4 +17,6 @@ PG_USER=PG_USER generalmente "postgres"
 PG_PASSWORD=PG_PASSWORD su contrasena de postgresql
 PG_DB_NAME=DATABASE_NAME el nombre que eligio para la base de datos
 
-3. ejecutar por terminal el comando "node ace migration:run"
+3. ejecutar por terminal el comando "node ace migration:run" para crear las tablas en la base de datos.
+
+4. ejecutar por terminal el comando "node ace serve --watch" para iniciar el proyecto.
