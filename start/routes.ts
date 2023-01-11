@@ -23,3 +23,13 @@ import Route from '@ioc:Adonis/Core/Route'
 Route.get('/', async () => {
   return { hello: 'world' }
 })
+
+Route.get('/tasks', 'TasksController.getTask')
+
+Route.post('/tasks', 'TasksController.newTask')
+
+Route.get('/tasks/:id', 'TasksController.getTaskById')
+
+Route.patch('/tasks/archive/:id', 'TasksController.archiveTaskById')
+
+Route.patch('/tasks/update/:id', 'TasksController.updateTaskById')
