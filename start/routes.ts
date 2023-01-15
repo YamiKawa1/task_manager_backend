@@ -32,4 +32,6 @@ Route.get('/tasks/:id', 'TasksController.getTaskById')
 
 Route.patch('/tasks/archive/:id', 'TasksController.archiveTaskById')
 
+Route.patch('/tasks/done/:id', 'TasksController.doneTaskById')
+
 Route.patch('/tasks/update/:id', 'TasksController.updateTaskById')
